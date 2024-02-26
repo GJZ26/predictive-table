@@ -1,0 +1,126 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    background-color: rgb(35, 35, 35);
+    color: rgb(229, 229, 229);
+}
+
+
+h1 {
+    font-size: 28px;
+    margin: 40px 0;
+}
+
+button#check {
+    border-radius: 6px;
+    padding: 4px 8px;
+    border: 1px solid rgb(229, 229, 229);
+    outline: none;
+    background-color: rgb(35, 35, 35);
+    color: rgb(229, 229, 229);
+    margin-left: 15px;
+}
+
+button#check:hover {
+    border: 1px solid rgb(35, 35, 35);
+    outline: none;
+    background-color: rgb(229, 229, 229);
+    color: rgb(35, 35, 35);
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+input#input-checker {
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: none;
+}
+
+main.program-output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 45px 0;
+    gap: 30px;
+}
+
+div.outqueue,
+div.inqueue {
+    border-radius: 7px;
+    border: 1px solid white;
+    width: 300px;
+    min-height: 20px;
+}
+
+div.outqueue span,
+div.inqueue span {
+    border: 1px solid rgb(126, 126, 126);
+    color: rgb(126, 126, 126);
+    display: block;
+    margin: 5px 5px;
+    border-radius: 4px;
+    transition: all 200ms;
+
+}
+
+div.inqueue span.success {
+    background-color: #1e391e !important;
+    border-color: #55c055 !important;
+}
+
+div.inqueue span.wrong {
+    background-color: #391e1e !important;
+    border-color: #c05555 !important;
+}
+
+span#log {
+    font-size: 13.2px;
+    margin-left: 8px;
+    margin-top: 2px;
+    position: absolute;
+}
+
+span#log.succes {
+    color: rgb(86, 222, 86);
+}
+
+
+span#log.error {
+    color: rgb(249, 43, 43);
+}
+
+div.outqueue span:first-child,
+div.inqueue span:first-child {
+    border: 1px solid rgb(226, 226, 226);
+    color: rgb(226, 226, 226);
+    background-color: rgba(142, 142, 142, 0.137);
+    display: block;
+    margin: 5px 5px;
+    border-radius: 4px;
+    transition: all 200ms;
+}
+
+div.outqueue::before,
+div.inqueue::before {
+    margin-top: -24px;
+    margin-left: -146px;
+    position: absolute;
+}
+
+div.outqueue::before {
+    content: "Cola";
+}
+
+div.inqueue::before {
+    content: "Entrada";
+}
+
+button#check:disabled,
+button#check:disabled:hover {
+    background-color: transparent;
+    border-color: #353535;
+    color: #3e3e3e;
+    cursor: not-allowed;
+}

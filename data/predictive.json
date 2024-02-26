@@ -1,0 +1,189 @@
+{
+    "REPETITIVA": {
+        "$": null,
+        "{}": null,
+        "(": null,
+        ")": null,
+        "==": null,
+        "!=": null,
+        "true": null,
+        "false": null,
+        "^do$": [
+            {
+                "val": "CUERPO",
+                "type": "REF"
+            },
+            {
+                "val": "MIENTRAS",
+                "type": "REF"
+            }
+        ],
+        "mientras": null,
+        "[a-zA-Z]": null
+    },
+    "CUERPO": {
+        "$": null,
+        "{}": [],
+        "(": null,
+        ")": null,
+        "==": null,
+        "!=": null,
+        "true": null,
+        "false": null,
+        "^do$": null,
+        "mientras": null,
+        "[a-zA-Z]": null
+    },
+    "MIENTRAS": {
+        "$": null,
+        "{}": null,
+        "(": null,
+        ")": null,
+        "==": null,
+        "!=": null,
+        "true": null,
+        "false": null,
+        "^do$": null,
+        "mientras": [
+            {
+                "val": "CONDICIONAL",
+                "type": "REF"
+            }
+        ],
+        "[a-zA-Z]": null
+    },
+    "CONDICIONAL": {
+        "$": null,
+        "{}": null,
+        "(": [
+            {
+                "val": "EXPRESION",
+                "type": "REF"
+            },
+            {
+                "val": ")",
+                "type": "RULE"
+            }
+        ],
+        ")": null,
+        "==": null,
+        "!=": null,
+        "true": null,
+        "false": null,
+        "^do$": null,
+        "mientras": null,
+        "[a-zA-Z]": null
+    },
+    "EXPRESION": {
+        "$": null,
+        "{}": null,
+        "(": null,
+        ")": null,
+        "==": null,
+        "!=": null,
+        "true": null,
+        "false": null,
+        "^do$": null,
+        "mientras": null,
+        "[a-zA-Z]": [
+            {
+                "val": "OPERADOR",
+                "type": "REF"
+            },
+            {
+                "val": "V",
+                "type": "REF"
+            }
+        ]
+    },
+    "VALOR": {
+        "$": null,
+        "{}": null,
+        "(": null,
+        ")": null,
+        "==": null,
+        "!=": null,
+        "true": null,
+        "false": null,
+        "^do$": null,
+        "mientras": null,
+        "[a-zA-Z]": [
+            {
+                "val": "a",
+                "type": "REF"
+            }
+        ]
+    },
+    "RESTO": {
+        "$": null,
+        "{}": null,
+        "(": null,
+        ")": null,
+        "==": [
+            {
+                "val": "a",
+                "type": "REF"
+            }
+        ],
+        "!=": [
+            {
+                "val": "a",
+                "type": "REF"
+            }
+        ],
+        "true": null,
+        "false": null,
+        "^do$": null,
+        "mientras": null,
+        "[a-zA-Z]": [
+            {
+                "val": "a",
+                "type": "REF"
+            }
+        ]
+    },
+    "V": {
+        "$": null,
+        "{}": null,
+        "(": null,
+        ")": null,
+        "==": null,
+        "!=": null,
+        "true": [],
+        "false": [],
+        "^do$": null,
+        "mientras": null,
+        "[a-zA-Z]": null
+    },
+    "LETRA": {
+        "$": null,
+        "{}": null,
+        "(": null,
+        ")": null,
+        "==": null,
+        "!=": null,
+        "true": null,
+        "false": null,
+        "^do$": null,
+        "mientras": null,
+        "[a-zA-Z]": [
+            {
+                "val": "a",
+                "type": "REF"
+            }
+        ]
+    },
+    "OPERADOR": {
+        "$": null,
+        "{}": null,
+        "(": null,
+        ")": null,
+        "==": [],
+        "!=": [],
+        "true": null,
+        "false": null,
+        "^do$": null,
+        "mientras": null,
+        "[a-zA-Z]": null
+    }
+}
